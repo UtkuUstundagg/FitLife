@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    ViewData["Title"] = "Egzersiz Plani";
+}
+@model EgzersizModel
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+</head>
+
+<body>
+
+    <div class="Signup-Card">
+        <h1>Egzersiz Planı Güncelleme Ekranı</h1>
+    </div>
+
+    <form asp-action="EgzersizPlaniGuncelleAction" asp-controller="Antrenor" method="post" class="Signup-Form">
+
+        <label for="danisanKey">Danışan Key:</label>
+        <input type="text" asp-for="danisanKey" ReadOnly="true"/>
+
+        <label for="egzersizKey">Egzersiz Key:</label>
+        <input type="text" asp-for="egzersizKey" ReadOnly="true"/>
+
+        <label for="set">Set Sayısı:</label>
+        <input type="number" asp-for="setSayisi" placeholder="3 - 4" />
+
+        <label for="tekrar">Tekrar Sayısı:</label>
+        <input type="int" asp-for="tekrarSayisi" placeholder="8 - 10 - 12" />
+
+        <label for="baslangicTarihi">Başlangıç Tarihi:</label>
+        <input type="date" asp-for="baslangicTarihi"  />
+
+        <label for="ogun3">Program Süresi:</label>
+        <input type="number" asp-for="programSuresi" placeholder=" 7 gün - 14 gün" />
+
+        <label for="kasKazanma">Kas Kazanma:</label>
+        <input type="text " asp-for="kasKazanma" ReadOnly="true" />
+
+        <label for="kiloAldirma">Kilo Alma:</label>
+        <input type="text " asp-for="kiloAlma" ReadOnly="true" />
+
+        <label for="kiloVerdirme">Kilo Verme:</label>
+        <input type="text " asp-for="kiloVerme" ReadOnly="true" />
+
+        <label for="kiloKoruma">Kilo Koruma:</label>
+        <input type="text " asp-for="kiloKoruma" ReadOnly="true" />
+
+        <button id="Giris" type="submit">Güncelle</button>
+    </form>
+
+    <form asp-action="AntrenorSayfasinaDon" asp-controller="Antrenor" method="post" class="Signup-Form">
+        <button id="Giris" type="submit">Antrenör Sayfasına Dön</button>
+    </form>
+
+
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body, .wrapper {
+        height: 50%;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0 24px;
+        color: #000;
+    }
+
+    .Signup-Card {
+        position: static;
+        z-index: 3;
+        width: 100%;
+        margin: 0 20px;
+        padding: 70px 30px 44px;
+        border-radius: 1.25rem;
+        background: #fff;
+        text-align: center;
+    }
+
+        .Signup-Card > h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 12px;
+        }
+
+        .Signup-Card > h2 {
+            color: rgba(0, 0, 0, 0.85);
+            margin: 0 0 30px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+
+    .Signup-Form {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        gap: 16px;
+    }
+
+        .Signup-Form > input, .Signup-Form > button {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        .Signup-Form > label {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+
+        .Signup-Form > input {
+            border: 2px solid #ebebeb;
+            font-family: inherit;
+            font-size: 15px;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > input:hover {
+                border: 2px solid #10449A;
+            }
+
+        .Signup-Form > button {
+            cursor: pointer;
+            width: 100%;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            background: #216ce7;
+            color: #f9f9f9;
+            border: 0;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 2px;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > button:hover {
+                background: #10449A;
+            }
+
+        .Signup-Form > a {
+            color: #216ce7;
+            font-size: 0.9rem;
+            text-align: left;
+            text-decoration: none;
+            margin-bottom: 6px;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > a:hover {
+                color: #10449A;
+            }
+
+</style>
+</html>

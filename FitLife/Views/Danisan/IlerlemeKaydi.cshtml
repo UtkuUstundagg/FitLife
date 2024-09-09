@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    ViewData["Title"] = "İlerleme Kaydı";
+}
+@model IlerlemeKaydi
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+</head>
+
+<body>
+
+    <div class="Signup-Card">
+        <h1>İlerleme Kaydınız</h1>
+    </div>
+    <form asp-action="IlerlemeKaydiOlustur" asp-controller="Danisan" method="post" class="Signup-Form">
+        <label for="danisanKey">Key:</label>
+        <input type="text" asp-for="danisanKey" ReadOnly="true"/>
+
+        <label for="kayitKey">Key:</label>
+        <input type="text" asp-for="kayitKey" ReadOnly="true"/>
+
+        <label for="cinsiyet">Cinsiyet:</label>
+        <input type="text" asp-for="cinsiyet" ReadOnly="true"/>
+
+        <label for="kalori">Kilo:</label>
+        <input type="text" asp-for="kilo" placeholder="50-75-100" />
+
+        <label for="boy">Boy:</label>
+        <input type="text"  asp-for="boy" placeholder="1.93 - 1.72" />
+
+        <label for="yagOrani">Yağ Oranı %:</label>
+        <input type="text"  asp-for="yagOrani" placeholder="15-20-25" />
+
+        <label for="endeks">Endeks:</label>
+        <input type="text"  asp-for="endeks" ReadOnly="true" />
+
+        <label for="kasKutlesi">Kas Kütlesi:</label>
+        <input type="text"  asp-for="kasKutlesi" ReadOnly="true" />
+
+        <button id="Giris" type="submit">Oluştur/Güncelle</button>
+
+    </form>
+
+    <form asp-action="DanisanSayfasinaDon" asp-controller="Danisan" method="post" class="Signup-Form">
+        <button id="Giris" type="submit">Danışan Sayfasına Dön</button>
+    </form>
+
+
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body, .wrapper {
+        height: 50%;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0 24px;
+        color: #000;
+    }
+
+    .Signup-Card {
+        position: static;
+        z-index: 3;
+        width: 100%;
+        margin: 0 20px;
+        padding: 70px 30px 44px;
+        border-radius: 1.25rem;
+        background: #fff;
+        text-align: center;
+    }
+
+        .Signup-Card > h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 12px;
+        }
+
+        .Signup-Card > h2 {
+            color: rgba(0, 0, 0, 0.85);
+            margin: 0 0 30px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+
+    .Signup-Form {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        gap: 16px;
+    }
+
+        .Signup-Form > input, .Signup-Form > button {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        .Signup-Form > label {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+
+        .Signup-Form > input {
+            border: 2px solid #ebebeb;
+            font-family: inherit;
+            font-size: 15px;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > input:hover {
+                border: 2px solid #10449A;
+            }
+
+        .Signup-Form > button {
+            cursor: pointer;
+            width: 100%;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            background: #216ce7;
+            color: #f9f9f9;
+            border: 0;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 2px;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > button:hover {
+                background: #10449A;
+            }
+
+        .Signup-Form > a {
+            color: #216ce7;
+            font-size: 0.9rem;
+            text-align: left;
+            text-decoration: none;
+            margin-bottom: 6px;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > a:hover {
+                color: #10449A;
+            }
+
+</style>
+</html>

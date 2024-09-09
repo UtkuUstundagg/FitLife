@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FitLife</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FitLife.styles.css" asp-append-version="true" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" , class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <img src="logo.png" alt="" class="sidebar-logo"
+            </header>
+            <nav class="sidebar-menu">
+                <button id="Home" type="button">
+                    <i class='bx bx-home'></i>
+                    <span>Home</span>
+                </button>
+
+                <button id="Giris" type="button">
+                    <i class='bx bx-log-in'></i>
+                    <span>Giriş Yap</span>
+                </button>
+
+                <button id="Kayit" type="button">
+                    <i class='bx bx-log-out'></i>
+                    <span>Kayıt Ol</span>
+                </button>
+
+                <button id="Profil" type="button">
+                    <i class='bx bx-user'></i>
+                    <span>Profilim</span>
+                </button>
+            </nav>
+        </div>
+        <label id="kullaniciKey" >Kullanici:</label>
+    </nav>
+
+    <script>
+        document.getElementById("Home").onclick = function(){
+            window.location.replace("https://localhost:7148/Home")
+        }
+    </script>
+
+    <script>
+        document.getElementById("Giris").onclick = function(){
+            window.location.replace("https://localhost:7148/Login/Login")
+        }
+    </script>
+
+    <script>
+        document.getElementById("Kayit").onclick = function(){
+            window.location.replace("https://localhost:7148/Register/Register")
+        }
+    </script>
+
+    <script>
+        document.getElementById("Profil").onclick = function(){
+            window.location.replace("https://localhost:7148/Login/Login")
+        }
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+        &copy; 2023 - FitLife - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+        </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #ffffff;
+    }
+
+    button {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .sidebar {
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 75px;
+        /*height: 93.55%;*/
+        height: 100%;
+        background: #216ce7;
+        transition: all 0.4s;
+    }
+
+    .sidebar > label {
+        position: absolute;
+        top: 93%;
+    }
+
+    body.open .sidebar {
+        width: 240px;
+    }
+
+    .sidebar-inner {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+    }
+
+    .sidebar-header {
+        display: flex;
+        align-items: center;
+        height: 268px;
+        padding: 0 1.25rem 0 0;
+        background: rgba(0, 0, 0, 0.1);
+        border-left: 3px solid transparent;
+        transition: all 0.4s;
+    }
+
+        .sidebar-header:hover {
+            border-left: 3px solid #bdbdbd;
+        }
+
+    .sidebar-burger {
+        width: 70px;
+        height: 70px;
+        display: grid;
+        place-items: center;
+    }
+
+        .sidebar-burger > i, body.open .sidebar-burger > i {
+            font-size: 25px;
+            color: #f9f9f9;
+            transition: all 0.4s;
+        }
+
+        .sidebar-burger:hover > i, body.open .sidebar-burger:hover > i {
+            color: #bdbdbd;
+        }
+
+    .sidebar-menu {
+        display: grid;
+    }
+
+        .sidebar-menu > button {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            height: 55px;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            line-height: 1;
+            padding: 0 22px;
+            border-left: 3px solid transparent;
+            transition: all 0.4s;
+        }
+
+            .sidebar-menu > button:hover {
+                border-left: 3px solid #f9f9f9;
+            }
+
+            .sidebar-menu > button.has-border {
+                padding-bottom: 1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+                margin-bottom: 1rem;
+            }
+
+            .sidebar-menu > button > i {
+                font-size: 25px;
+                color: #f9f9f9;
+                transition: all 0.4s;
+            }
+
+            .sidebar-menu > button:hover > i, .sidebar-menu > button:hover > span {
+                color: #bdbdbd;
+            }
+
+            .sidebar-menu > button > span {
+                color: #f9f9f9;
+                opacity: 0;
+                transition: all 0.4s;
+            }
+
+    body.open .sidebar-menu > button > span {
+        opacity: 1;
+        transition: all 0.4s;
+    }
+
+</style>
+</html>

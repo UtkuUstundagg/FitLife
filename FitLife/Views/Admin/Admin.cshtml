@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    ViewData["Title"] = "Admin";
+    Layout = "~/Views/Shared/_layout.cshtml";
+}
+@model Tuple<List<DanisanModel>, List<AntrenorModel>>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+</head>
+
+<body>
+    <div class="Signup-Card">
+        <h1 class="Giris">Fit-Life Admin Ekranına Hoş Geldiniz!</h1>
+
+        <form asp-action="YeniHesap" asp-controller="Admin" method="post" class="Signup-Form">
+            <button id="Giris" type="submit">Yeni Hesap Oluştur</button>
+        </form>
+        <ul class="Signup-Form">
+            Danışanlar:
+            @foreach (var item in Model.Item1)
+            {
+                <li>@item.danisanKey, @item.isim, @item.soyisim, @item.email, @item.sifre, @item.cinsiyet, @item.telefon, @item.hesapAktifMi</li>
+                @Html.ActionLink("Güncelle","Guncelle","Admin", new{key = @item.danisanKey}, new{style="width: 15%; height: 25px; border-radius: 1.25rem; background: #216ce7; color: #f9f9f9; text-align: center; cursor: pointer;"})
+                @Html.ActionLink("Etkinleştir", "Etkinlestir", "Admin", new{key = @item.danisanKey}, new { style = "width: 15%; height: 25px; border-radius: 1.25rem; background: #216ce7; color: #f9f9f9; text-align: center; cursor: pointer;" })
+                @Html.ActionLink("Devre Dışı Bırak","DevreDisiBirak","Admin", new{key = @item.danisanKey}, new{style="width: 20%; height: 25px; border-radius: 1.25rem; background: #216ce7; color: #f9f9f9; text-align: center; cursor: pointer;"})
+            }
+        </ul>
+        <ul class="Signup-Form">
+            Antrenörler:
+            @foreach (var item in Model.Item2)
+            {
+                <li>@item.antrenorKey, @item.isim, @item.soyisim, @item.email, @item.sifre, @item.cinsiyet, @item.telefon, @item.hesapAktifMi</li>
+                @*<button1 class="test1" type="submit"> test </button1>*@
+                @Html.ActionLink("Güncelle","Guncelle","Admin" , new{key = @item.antrenorKey}, new{style="width: 15%; height: 25px; border-radius: 1.25rem; background: #216ce7; color: #f9f9f9; text-align: center; cursor: pointer;"})
+                @Html.ActionLink("Etkinleştir", "Etkinlestir", "Admin", new{key = @item.antrenorKey}, new { style = "width: 15%; height: 25px; border-radius: 1.25rem; background: #216ce7; color: #f9f9f9; text-align: center; cursor: pointer;" })
+                @Html.ActionLink("Devre Dışı Bırak","DevreDisiBirak","Admin", new{key = @item.antrenorKey}, new{style="width: 20%; height: 25px; border-radius: 1.25rem; background: #216ce7; color: #f9f9f9; text-align: center; cursor: pointer;"})
+            }
+        </ul>
+    </div>
+</body>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body, .wrapper {
+        height: 50%;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0 24px;
+        color: #000;
+    }
+
+    a1 {
+        display: inline;
+    }
+
+        a1:hover {
+            background: #216ce7;
+            color: #f9f9f9;
+            cursor: pointer;
+        }
+
+    .Signup-Card {
+        position: static;
+        z-index: 3;
+        width: 100%;
+        margin: 0 20px;
+        padding: 70px 30px 44px;
+        border-radius: 1.25rem;
+        background: #fff;
+        text-align: left;
+    }
+
+        .Signup-Card > h1 {
+            place-items: center;
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 12px;
+        }
+
+        .Signup-Card > h2 {
+            color: rgba(0, 0, 0, 0.85);
+            margin: 0 0 30px;
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+    .Signup-Form {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        gap: 16px;
+    }
+
+        .Signup-Form > li {
+            width: 65%;
+            margin-bottom: 2px;
+            margin-top: 2px;
+            border: 2px solid #ebebeb;
+            border-radius: 1.25rem;
+        }
+
+
+        .Signup-Form > input, .Signup-Form > button {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+        /*        .Signup-Form > button1 {
+                                    width: 5%;
+                                    height: 25px;
+                                    border-radius: 1.25rem;
+                                    background: #216ce7;
+                                    color: #f9f9f9;
+                                    text-align: center;
+                                    cursor: pointer;
+                                }
+
+
+                                    .Signup-Form > button1:hover {
+                                        width: 5%;
+                                        height: 25px;
+                                        background: #216ce7;
+                                        border-radius: 1.25rem;
+                                        color: #f9f9f9;
+                                        text-align: center;
+                                        cursor: pointer;
+                                    }*/
+
+        .Signup-Form > input {
+            border: 2px solid #ebebeb;
+            font-family: inherit;
+            font-size: 15px;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > input:hover {
+                border: 2px solid #10449A;
+            }
+
+        .Signup-Form > button {
+            cursor: pointer;
+            width: 100%;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            background: #216ce7;
+            color: #f9f9f9;
+            border: 0;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 2px;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > button:hover {
+                background: #10449A;
+            }
+
+        .Signup-Form > a {
+            color: #216ce7;
+            font-size: 0.9rem;
+            text-align: left;
+            text-decoration: none;
+            margin-bottom: 6px;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > a:hover {
+                color: #10449A;
+            }
+</style>
+</html>
+

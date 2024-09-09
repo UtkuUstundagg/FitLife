@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@{
+    ViewData["Title"] = "Mesaj";
+}
+@model MesajModel
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+</head>
+
+<body>
+
+    <div class="Signup-Card">
+        <h1>Mesaj Ekranına Hoş Geldiniz</h1>
+    </div>
+
+    <form asp-action="DanisanaMesajAt" asp-controller="Antrenor" class="Signup-Form" method="post">
+        <div class="kullanici-key">
+            <label for="antrenorKey">Key: </label>
+            <input type="text" asp-for="gondericiKey" ReadOnly="true" />
+            <label for="antrenorKey">Danisan: </label>
+            <input type="text" asp-for="aliciKey" ReadOnly="true" />
+        </div>
+
+        <input type="text" asp-for="icerik" placeholder="Mesajınızı Buraya Giriniz" />
+        <button id="profil" type="submit">Mesaj Gönder</button>
+    </form>
+
+    <form asp-action="AntrenorSayfasinaDon" asp-controller="Antrenor" method="post" class="Signup-Form">
+        <button id="Giris" type="submit">Antrenör Sayfasına Dön</button>
+    </form>
+
+</body>
+
+<style>
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body, .wrapper {
+        height: 50%;
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+        margin: 0;
+        padding: 0 24px;
+        color: #000;
+    }
+
+    .kullanici-key {
+        width: 100%;
+        font-weight: 600;
+    }
+
+        .kullanici-key > input {
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            border: 0;
+            width: 20%;
+        }
+
+    .Signup-Card {
+        position: static;
+        z-index: 3;
+        width: 100%;
+        margin: 0 20px;
+        padding: 70px 30px 44px;
+        border-radius: 1.25rem;
+        background: #fff;
+        text-align: center;
+    }
+
+        .Signup-Card > h1 {
+            font-size: 36px;
+            font-weight: 600;
+            margin: 0 0 12px;
+        }
+
+
+
+    .Signup-Form {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        gap: 16px;
+    }
+
+        .Signup-Form > kullanici-key > input {
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            border: 0;
+            width: 20%;
+        }
+
+        .Signup-Form > input {
+            width: 100%;
+            height: 100px;
+        }
+
+        .Signup-Form > button {
+            width: 100%;
+            height: 50px;
+        }
+
+        .Signup-Form > input {
+            border: 2px solid #ebebeb;
+            font-family: inherit;
+            font-size: 15px;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > input:hover {
+                border: 2px solid #10449A;
+            }
+
+        .Signup-Form > button {
+            cursor: pointer;
+            width: 100%;
+            padding: 0 16px;
+            border-radius: 1.25rem;
+            background: #216ce7;
+            color: #f9f9f9;
+            border: 0;
+            font-family: inherit;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: 2px;
+            transition: all 0.375s;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+
+            .Signup-Form > button:hover {
+                background: #10449A;
+            }
+
+        .Signup-Form > a {
+            color: #216ce7;
+            font-size: 0.9rem;
+            text-align: left;
+            text-decoration: none;
+            margin-bottom: 6px;
+            transition: all 0.375s;
+        }
+
+            .Signup-Form > a:hover {
+                color: #10449A;
+            }
+
+</style>
+</html>

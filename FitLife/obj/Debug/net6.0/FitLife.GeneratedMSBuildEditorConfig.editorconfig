@@ -1,0 +1,136 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FitLife
+build_property.RootNamespace = FitLife
+build_property.ProjectDir = D:\VS-Dosyalarım\FitLife\FitLife\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\VS-Dosyalarım\FitLife\FitLife
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Admin/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Admin/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/Antrenor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcQW50cmVub3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/BeslenmePlani.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcQmVzbGVubWVQbGFuaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/BeslenmePlaniGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcQmVzbGVubWVQbGFuaUd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/EgzersizPlani.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcRWd6ZXJzaXpQbGFuaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/EgzersizPlaniGuncelle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcRWd6ZXJzaXpQbGFuaUd1bmNlbGxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/GelenKutusu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcR2VsZW5LdXR1c3UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/MesajGonder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcTWVzYWpHb25kZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Antrenor/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW50cmVub3JcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/BeslenmePlani.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxCZXNsZW5tZVBsYW5pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/Danisan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxEYW5pc2FuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/EgzersizPlani.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxFZ3plcnNpelBsYW5pLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/GelenMesaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxHZWxlbk1lc2FqLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/IlerlemeKaydi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxJbGVybGVtZUtheWRpLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/Mesaj.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxNZXNhai5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Danisan/Raporlar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaXNhblxSYXBvcmxhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Login/Authentication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQXV0aGVudGljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Login/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Login/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Login/PasswordAuthentication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUGFzc3dvcmRBdXRoZW50aWNhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Register/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJcUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/VS-Dosyalarım/FitLife/FitLife/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ehbfnpajgj
